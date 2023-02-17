@@ -71,13 +71,11 @@ def retrieve_default_sharing(service):
     Get the default sharing settings of files in the google account and print it
     """
     try:
-        # Get the default sharing settings for the user
+        # Call the about.get method to get information about the user's Google Drive account
         about = service.about().get(fields='user').execute()
         permission_id = about['user']['permissionId']
         # Get the permissions for the default role
-        permissions = service.permissions().list(
-        fileId='root',
-        ).execute()
+        permissions = service.permissions().list(fileId='root',).execute()
         default_permission = None
         for permission in permissions['permissions']:
             if permission['id'] == permission_id:
