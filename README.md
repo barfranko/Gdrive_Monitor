@@ -67,7 +67,7 @@ Waiting 60 Seconds
 2023-02-17T13:39:19.014467Z No new files detected.
 Waiting 60 Seconds
 ```
-## Retrieve/Set the general sharing access default option for new items
+## Change the general sharing access default option for new items
 By default, general access is set to Restricted. This is the recommended setting for most users, so they can share a file only when they’re ready and keep personal files private.
 Changing it available only for company editions: Business Standard and Business Plus; Enterprise; Education Standard and Education Plus; G Suite Business; Nonprofits.
 
